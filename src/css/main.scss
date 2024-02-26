@@ -1,0 +1,15 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+}
+
+.delete-btn {
+  width: 30px;
+  height: 30px;
+  padding-bottom: 20px;
+}
+
+ul li {
+  word-break: break-all;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div class="container pt-5">
+      <div class="p-3 border border-secondary rounded">
+        <form class="d-flex gap-3">
+          <input type="text" class="form-control p-3 fs-5" name="taskName" />
+          <button disabled class="btn btn-outline-light p-3">+</button>
+        </form>
+      </div>
+      <div
+        class="border border-secondary rounded p-3 mt-3"
+        style="min-height: 300px"
+      >
+        <div
+          class="pb-2 border-bottom border-secondary d-flex justify-content-between align-items-center"
+        >
+          <h2>List</h2>
+          <button class="btn text-capitalize fw-bold fs-5" id="clear-btn">
+            clear
+          </button>
+        </div>
+        <ul id="tasks-list" class="list-unstyled">
+          <!-- <div class="pt-4 d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center gap-3 text-capitalize">
+              <input type="checkbox" class="form-check-input p-3" id="item" />
+              <label for="item" class="fs-4">make a video</label>
+            </div>
+            <button
+              class="delete-btn border px-3 pt-3 border-black btn btn-light d-flex justify-content-center align-items-center fs-4"
+            >
+              x
+            </button>
+          </div> -->
+        </ul>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
